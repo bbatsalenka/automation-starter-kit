@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [IE-Tests]" parallel="tests">
+  <parameter name="port" value="5555"/>
+  <parameter name="environment" value="stage"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="user" value="user3"/>
+  <parameter name="ipAddress" value="localhost"/>
+  <listeners>
+    <listener class-name="utils.ScreenshotOnFailure"/>
+  </listeners>
+  <test name="Test II(failed)" parallel="tests">
+    <parameter name="port" value="5555"/>
+    <parameter name="environment" value="stage"/>
+    <parameter name="browser" value="ie"/>
+    <parameter name="user" value="user2"/>
+    <parameter name="ipAddress" value="localhost"/>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.VerifyPagesLoadFine">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="prepareSuiteForTesting"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.VerifyPagesLoadFine -->
+      <class name="tests.FilesDownloadVerification">
+        <methods>
+          <include name="isPerformanceTestTutorialDownloadable"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.FilesDownloadVerification -->
+    </classes>
+  </test> <!-- Test II(failed) -->
+  <test name="Test III(failed)" parallel="tests">
+    <parameter name="port" value="5555"/>
+    <parameter name="environment" value="stage"/>
+    <parameter name="browser" value="ie"/>
+    <parameter name="user" value="user3"/>
+    <parameter name="ipAddress" value="localhost"/>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.VerifyPagesLoadFine">
+        <methods>
+          <include name="veifyLoadTestPageLoadsFine"/>
+          <include name="verifyLoadTestingToolsPageLoadsFine"/>
+          <include name="beforeTest"/>
+          <include name="verifyPerformancePageLoadsFine"/>
+          <include name="prepareSuiteForTesting"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.VerifyPagesLoadFine -->
+      <class name="tests.FilesDownloadVerification">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.FilesDownloadVerification -->
+    </classes>
+  </test> <!-- Test III(failed) -->
+</suite> <!-- Failed suite [IE-Tests] -->

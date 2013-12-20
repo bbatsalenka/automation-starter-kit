@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="IE-Tests" parallel="tests" preserve-order="true"
+	thread-count="1" verbose="5">
+	<listeners>
+		<listener class-name="utils.ScreenshotOnFailure" />
+	</listeners>
+	<test name="Test I">
+		<parameters>
+			<parameter name="browser" value="ie" />
+			<parameter name="port" value="5555" />
+			<parameter name="ipAddress" value="localhost" />
+			<parameter name="user" value="user1" />
+			<parameter name="environment" value="stage" />
+		</parameters>
+		<classes>
+			<class name="tests.LoginTest" />
+		</classes>
+	</test>
+	<test name="Test II">
+		<parameters>
+			<parameter name="browser" value="ie" />
+			<parameter name="port" value="5555" />
+			<parameter name="ipAddress" value="localhost" />
+			<parameter name="user" value="user2" />
+			<parameter name="environment" value="stage" />
+		</parameters>
+		<classes>
+			<class name="tests.FilesDownloadVerification" />
+		</classes>
+	</test>
+	<test name="Test III">
+		<parameters>
+			<parameter name="browser" value="ie" />
+			<parameter name="port" value="5555" />
+			<parameter name="ipAddress" value="localhost" />
+			<parameter name="user" value="user3" />
+			<parameter name="environment" value="stage" />
+		</parameters>
+		<classes>
+			<class name="tests.VerifyPagesLoadFine" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
