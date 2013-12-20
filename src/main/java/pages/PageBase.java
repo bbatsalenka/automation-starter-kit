@@ -59,9 +59,6 @@ public abstract class PageBase {
 			Reporter.log(e.toString());
 			return false;
 		}
-		if (link.contains("pager") || code == 403) {
-			return true;
-		}
 		return code == 200 || code == 302;
 	}
 

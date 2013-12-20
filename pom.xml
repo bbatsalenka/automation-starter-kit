@@ -3,10 +3,10 @@
 http://maven.apache.org/xsd/maven-3.1.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>biz.neustar.tests</groupId>
-	<artifactId>Version_01</artifactId>
+	<artifactId>automation-starter-kit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<url>http://maven.apache.org</url>
-	<name>Version_01</name>
+	<name>automation-starter-kit</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
