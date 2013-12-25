@@ -39,9 +39,9 @@ http://maven.apache.org/xsd/maven-3.1.0.xsd">
 							<mailport>465</mailport>
 							<mailssl>true</mailssl>
 							<mailAltConfig>true</mailAltConfig>
-							<mailuser>bagditester@gmail.com</mailuser>
-							<mailpassword>1234success</mailpassword>
-							<from>bagditester@gmail.com</from>
+							<mailuser>yourEmail</mailuser>
+							<mailpassword>password</mailpassword>
+							<from>yourEmail</from>
 							<receivers>
 								<receiver>${receiver}</receiver>
 							</receivers>
