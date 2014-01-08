@@ -80,15 +80,15 @@ public class Utils {
 			return capability;
 		}
 		case "ie": {
-			System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
+			//System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
 			DesiredCapabilities capability = DesiredCapabilities
 					.internetExplorer();
 			return capability;
 		}
 		case "chrome": {
+			// System.setProperty("webdriver.chrome.driver",
+			//		"c:\\chromedriver.exe");
 			DesiredCapabilities capability = DesiredCapabilities.chrome();
-			System.setProperty("webdriver.chrome.driver",
-					"c:\\chromedriver.exe");
 			return capability;
 		}
 		default: {
